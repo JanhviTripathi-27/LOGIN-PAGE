@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <div class="background">
+    <div class="login-box">
+      <h2 style="color: aqua; font-size: xx-large;font-style: bold;">Login</h2>
+      <form id="loginForm" onsubmit="UserInput()" action="otp.html">
+        <div class="input-group">
+          <input type="text" placeholder="Username" id="username" required />
+          <span class="icon">👤</span>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Password" id="password" required />
+          <span class="icon">🔒</span>
+        </div>
+        <div class="input-group">
+          <input type="email" placeholder="EMAIL" id="email" required />
+           <span class="icon">📧</span>
+        </div>
+        <div class="nav-search">
+          <!-- Phone number container -->
+          <div class="input-group">
+            <select class="search-select" id="countryCode">
+              <option value="+1">+1</option>
+              <option value="+91">+91</option>
+              <option value="+971">+971</option>
+              <option value="+44">+44</option>
+            </select>
+            <input placeholder="Phone No." class="search-input" type="text" ID="PhoneInput">
+             <span class="icon">📞</span>
+          </div>
+        </div>
+        <!-- Country container -->
+        <div class="nav-search1">
+          <div class="input-group">
+            <select class="search-select" id="countryFilter">
+              <option>Select country🌎</option>
+              <option value="America">America</option>
+              <option value="India">India</option>
+              <option value="UAE">UAE</option>
+              <option value="UK">UK</option>
+            </select>
+
+          </div>
+        </div>
+        <div class="options">
+          <label><input type="checkbox" id="remember" /> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <!--<input type="submit" value="Submit">-->
+            <button onclick="userInput()">Submit</button>
+
+
+        <p class="register-text">Don't have an account? <a href="#">Register</a></p>
+      </form>
+      <div class="note">🌹 Thank you for joining Rose Radiance! 🌸</div>
+    </div>
+    
+
+  </div>
+
+
+<script src="login.js"></script>
+</body>
+
+</html>
